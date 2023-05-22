@@ -1,6 +1,6 @@
 # AdP 2023
 
-## Ejemplo usando wildcards en el servidor
+## MQTT usando wildcards en el servidor
 
 En el directorio `esp_32` se encuentra un ejemplo de aplicación para ESP-32 que realiza publicaciones usando el tópico `medicion/id` donde `id` corresponde al identificador que representa al nodo en el sistema.
 

@@ -33,7 +33,7 @@ let dispositivos = [];
 // defino express y puerto
 const app = (0, express_1.default)();
 const puerto = 3000;
-// conexion a broker MQTT
+// conexión a broker MQTT
 const cliente = mqtt.connect('mqtt://localhost:1883');
 // defino rutas
 app.get('/', (req, res) => {
@@ -74,7 +74,7 @@ cliente.on('connect', () => {
 });
 // al recibir un mensase
 cliente.on('message', (topico, mensaje) => {
-    // controlo topico
+    // controlo tópico
     if (topico.indexOf('medicion') !== -1) {
         // imprimo mensaje recibido
         console.log(`[Servidor] Mensaje recibido: ${mensaje}. Topico: ${topico}`);

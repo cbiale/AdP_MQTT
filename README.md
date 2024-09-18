@@ -1,4 +1,4 @@
-# Arquitectura de Protocolos 2023
+# Arquitectura de Protocolos
 
 ## MQTT usando wildcards en el servidor
 

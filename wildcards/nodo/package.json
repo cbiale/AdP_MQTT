@@ -1,0 +1,24 @@
+{
+  "name": "nodo",
+  "version": "1.0.0",
+  "description": "Nodo que envia datos MQTT",
+  "main": "index.ts",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AdP - UBA",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.1.7",
+    "concurrently": "^8.0.1",
+    "nodemon": "^3.1.5",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "mqtt": "^4.3.7"
+  }
+}
